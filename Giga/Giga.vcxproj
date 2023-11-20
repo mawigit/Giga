@@ -14,6 +14,7 @@
     <ClInclude Include="src\Giga.h" />
     <ClInclude Include="src\Giga\Application.h" />
     <ClInclude Include="src\Giga\Core.h" />
+    <ClInclude Include="src\Giga\EntryPoint.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Giga\Application.cpp" />

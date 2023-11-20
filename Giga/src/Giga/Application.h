@@ -13,4 +13,6 @@ namespace Giga
 		void Run();
 
 	};
+	//TBD in Client
+	Application* CreateApplication();
 }
