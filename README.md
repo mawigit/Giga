@@ -18,6 +18,7 @@ Name known issues related to game engines (Unreal, Unity) and version control sy
 * Large File/Project Sizes
 
 Describe a logging system with your own words:
+* Used to write (to console or file) certain messages depending on their severity (usually: TRACE, INFO, WARN, ERROR) - mainly used for debugging
 
 What is the difference between git submodules and git subtrees?
 * In summary, while both Git submodules and Git subtrees allow you to include external repositories, they differ in their approach to integration, referencing, and updating. Submodules maintain a separation between repositories, while subtrees integrate the histories, making updates and navigation more seamless within the parent repository. The choice between submodules and subtrees depends on the specific needs and preferences of your project and development workflow
