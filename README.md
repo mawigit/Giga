@@ -21,7 +21,7 @@ Describe a logging system with your own words:
 * Used to write (to console or file) certain messages depending on their severity (usually: TRACE, INFO, WARN, ERROR) - mainly used for debugging
 
 What is the difference between git submodules and git subtrees?
-* In summary, while both Git submodules and Git subtrees allow you to include external repositories, they differ in their approach to integration, referencing, and updating. Submodules maintain a separation between repositories, while subtrees integrate the histories, making updates and navigation more seamless within the parent repository. The choice between submodules and subtrees depends on the specific needs and preferences of your project and development workflow
+* Git submodules and Git subtrees allow you to include external repositories, they differ in their approach to integration, referencing, and updating. Submodules maintain a separation between repositories, while subtrees integrate the histories
 
 What is a build system in C++? Name 3 build systems:
 * A build system is a set of tools and processes that automate the compilation, linking, and other tasks involved in transforming source code into an executable or library
