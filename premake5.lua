@@ -10,6 +10,9 @@ workspace "Giga"
 
 	outputdir = "%{cfg.buildcfg}-%{cfg.system}-%{cfg.architecture}"
 
+	IncludeDir = {}
+	IncludeDir["GLFW"] = "Giga/vendor/GLFW/include"
+
 project "Giga"
 	location "Giga"
 	kind "SharedLib"
@@ -17,6 +20,9 @@ project "Giga"
 
 	targetdir ("bin/" .. outputdir .. "/%{prj.name}")
 	objdir ("bin-int/" .. outputdir .. "/%{prj.name}")
+
+	pchheader "arpch.h"
+    pchsource "Giga/src/arpch.cpp"
 
 	files
 	{
@@ -26,8 +32,17 @@ project "Giga"
 
 	includedirs
 	{
-		"%{prj.name}/vendor/spdlog/include"
+		"%{prj.name}/src",
+		"%{prj.name}/vendor/spdlog/include",
+		"%{IncludeDir.GLFW}"
 	}
+
+	links
+    {
+        "GLFW",
+        "opengl32.lib",
+        "dwmapi.lib"
+    }
 
 	filter "system:windows"
 		cppdialect "C++17"
